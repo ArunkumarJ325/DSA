@@ -1,0 +1,21 @@
+
+
+class removeduplicatedsortedarray {
+    public int removeDuplicates(int[] nums) {
+        int start=0;
+        int next=1;
+        while(next<nums.length){
+            if(nums[start]!=nums[next]){
+                start++;
+                nums[start]=nums[next];
+                
+            }
+            
+            next++;
+            
+        }
+        return start+1;
+    }
+}
+
+//leetcode 26
